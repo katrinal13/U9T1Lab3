@@ -49,11 +49,10 @@ public class Car extends Vehicle
       }
   }
 
-  public void printCar()
+  @Override
+  public void printInfo()
   {
-      System.out.println("License Plate: " + getLicensePlate());
-      System.out.println("Toll Fee: " + getTollFee());
-      System.out.println("Passengers: " + getPassengers());
+      super.printInfo();
       System.out.println("Electric? " + electric);
       System.out.println("Discount Applied? " + discountApplied);
   }

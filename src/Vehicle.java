@@ -40,4 +40,11 @@ public class Vehicle
   {
     return tollFee * passengers;
   }
+
+  public void printInfo()
+  {
+    System.out.println("License Plate: " + licensePlate);
+    System.out.println("Toll Fee: " + tollFee);
+    System.out.println("Passengers: " + passengers);
+  }
 }

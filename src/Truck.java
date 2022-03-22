@@ -34,11 +34,11 @@ public class Truck extends Vehicle
       return tollPrice;
   }
 
-  public void printTruck() {
-    System.out.println("License Plate: " + getLicensePlate());
-    System.out.println("Toll Fee: " + getTollFee());
-    System.out.println("Passengers: " + getPassengers());
-    System.out.println("Number of axles: " + axles);
-    System.out.println("Has trailer? " + hasTrailer);
+  @Override
+  public void printInfo()
+  {
+      super.printInfo();
+      System.out.println("Number of axles: " + axles);
+      System.out.println("Has trailer? " + hasTrailer);
   }
 }
